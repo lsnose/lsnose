@@ -142,6 +142,7 @@ img{
 }
 .nav__item{
   margin-bottom: var(--mb-4);
+  margin: 8px;
 }
 .nav__link{
   position: relative;
@@ -166,6 +167,21 @@ img{
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
+}
+.nav_hirebutton {
+  cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  font-family: var(--body-font);
+  font-weight: var(--font-semi);
+  font-size: 15px;
+  background: none;
+  border: 2px solid #4070F4;
+  border-radius: .5rem;
+  color: #4070F4;
+  line-height: 1;
+  padding: 10px 26px;
+  box-shadow: 0.4em 0.3em 0 0 #4070F4;
 }
 
 /*Active menu*/
@@ -312,6 +328,8 @@ img{
 .work__img{
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
   border-radius: .5rem;
+  width: 20rem;
+  height: 15rem;
   overflow: hidden;
   
 }
@@ -319,8 +337,8 @@ img{
   transition: 1s;
   cursor: pointer;
 }
-.work__img img:hover{
-  transform: scale(1.1);
+.work__img:hover .flip-card-inner{
+  transform: rotateY(180deg);
 }
 
 .flip-card {
@@ -340,9 +358,9 @@ img{
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.work__img:hover .flip-card-inner {
+/* .work__img:hover .flip-card-inner {
   transform: rotateY(180deg);
-}
+} */
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
@@ -355,13 +373,25 @@ img{
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-
+  background-color: white;
+  color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-
+  color: black;
+  font-size: 11pt;
   transform: rotateY(180deg);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.hashtag {
+  position:relative;
+  font-size: 10pt;
+  padding-top: 1rem;
+  color: gray;
+  margin-bottom: -2em;
 }
 
 /* ===== CONTACT =====*/
@@ -479,6 +509,8 @@ img{
   }
   .contact__container{
     justify-items: center;
+    color: black;
+    font-weight: bold;
   }
 }
 

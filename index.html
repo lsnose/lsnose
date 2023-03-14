@@ -1,274 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-        <!-- <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Lillian Nose</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Lillian Nosé</a>
-                </div>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> -->
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+    <title>Lillian Nose</title>
+</head>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Lillian Nosé</a>
+            </div>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    
-                    <!-- <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Lillian</span><br>Software Engineer</h1> -->
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Lillian</span>
-                        <br>I am a&nbsp
-                        <a href="" class="typewrite" data-period="2000" data-type='[ "New Grad.", "SWE.", "Foodie.", "Gamer.", "Painter." ]'>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active" id="home_nav">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link" id = "about_nav">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link" id="skills_nav">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link" id="work_nav">Work</a></li>
+                    <li class="nav_item"><button class="nav_hirebutton" onclick="window.location.href='mailto:lillian.nose@gmail.com';">Hire Me</button></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+
+                <!-- <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Lillian</span><br>Software Engineer</h1> -->
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Lillian</span>
+                    <br>I am a&nbsp
+                    <a href="" class="typewrite" data-period="2000"
+                        data-type='[ "New Grad.", "SWE.", "Foodie.", "Gamer.", "Painter." ]'>
                         <span class="wrap"></span>
                         </a>
                     </h1>
 
+            </div>
+
+            <div class="home__data">
+                <a href="https://drive.google.com/file/d/1IxsF0M9NUKQKoFg-QbIjIbhD_bEQCcdf/view?usp=sharing" class="button">Resume</a>
+
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/lillian-nose/" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="mailto:lillian.nose@gmail.com" class="home__social-icon"><i class='bx bxs-envelope'></i></a>
+                <a href="https://github.com/lsnose" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="assets/img/propic.png" alt="">
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.png" alt="">
                 </div>
 
-                <div class="home__data">
-                    <a href="#contact" class="button">Resume</a>
-                    
+                <div>
+                    <h2 class="about__subtitle">Nice to meet you! I'm Lillian</h2>
+
+                    <p class="about__text">I was born in NYC and raised in Princeton, NJ.
+                        <br><br>
+                        I graduated from University of Maryland with a computer science degree and moved to California
+                        after graduation, where I found my love for beach volleyball and nature.
+                        <br><br>
+                        Also a lover of cats, hole in the wall food spots, and art!
+                    </p>
                 </div>
+            </div>
+        </section>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/lillian-nose/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="mailto:lillian.nose@gmail.com" class="home__social-icon"><i class='bx bxs-envelope' ></i></a>
-                    <a href="https://github.com/lsnose" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
 
-                <div class="home__img">    
-                    <img src="assets/img/propic.png" alt="">
-                </div>
-            </section>
+            <div class="skills__container bd-grid">
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.png" alt="">
+                <!-- LEFT COLUMN -->
+                <div>
+                    <h2 class="skills__subtitle">Technical Skills</h2>
+                    <p class="skills__text">Languages:</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-terminal skills__icon'></i>
+                            <span class="skills__name">Java</span>
+                        </div>
                     </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Nice to meet you! I'm Lillian</h2>
-                    
-                        <p class="about__text">I was born in NYC and raised in Princeton, NJ.
-                            <br><br>
-                            I graduated from University of Maryland with a computer science degree and moved to California after graduation, where I found my love for beach volleyball and nature.
-                            <br><br>
-                            Also a lover of cats, hole in the wall food spots, and art!
-                        </p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">   
-                    
-                    <!-- LEFT COLUMN -->
-                    <div>
-                        <h2 class="skills__subtitle">Technical Skills</h2>
-                        <p class="skills__text">Languages:</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-terminal skills__icon'></i>
-                                <span class="skills__name">Java</span>
-                            </div>  
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-python skills__icon'></i>
+                            <span class="skills__name">Python</span>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-python skills__icon'></i>
-                                <span class="skills__name">Python</span>
-                            </div>   
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-terminal skills__icon' ></i>
-                                <span class="skills__name">Javascript</span>
-                            </div> 
-                        </div>
-
-                        <!-- TOOLS -->
-                        <p class="skills__text">Tools and Platforms:</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-joystick skills__icon' ></i>
-                                <span class="skills__name">Git</span>
-                            </div> 
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-joystick skills__icon' ></i>
-                                <span class="skills__name">SQL</span>
-                            </div> 
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-android skills__icon' ></i>
-                                <span class="skills__name">Android Studio</span>
-                            </div> 
-                        </div>
-
                     </div>
-                    
-                    <!-- RIGHT COLUMN -->
-                    <div> 
-                        <h2 class="skills__subtitle">&nbsp</h2>
-                        <p class="skills__text">&nbsp</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-terminal skills__icon'></i>
-                                <span class="skills__name">Swift</span>
-                            </div> 
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-terminal skills__icon'></i>
+                            <span class="skills__name">Javascript</span>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-terminal skills__icon'></i>
-                                <span class="skills__name">HTML/CSS</span>
-                            </div> 
+                    </div>
+
+                    <!-- TOOLS -->
+                    <p class="skills__text">Tools and Platforms:</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-joystick skills__icon'></i>
+                            <span class="skills__name">Git</span>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-terminal skills__icon'></i>
-                                <span class="skills__name">C</span>
-                            </div> 
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-joystick skills__icon'></i>
+                            <span class="skills__name">SQL</span>
                         </div>
-                        
-                        <p class="skills__text">&nbsp</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-joystick skills__icon' ></i>
-                                <span class="skills__name">Springboot</span>
-                            </div> 
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-joystick skills__icon' ></i>
-                                <span class="skills__name">Kafka</span>
-                            </div> 
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-terminal skills__icon' ></i>
-                                <span class="skills__name">Unix</span>
-                            </div> 
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-android skills__icon'></i>
+                            <span class="skills__name">Android Studio</span>
                         </div>
                     </div>
 
                 </div>
-            </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img style ='height: 100%; width: 100%; object-fit: contain; background-color: white;' src="assets/img/google-logo-transparent.png" alt="">
+                <!-- RIGHT COLUMN -->
+                <div>
+                    <h2 class="skills__subtitle">&nbsp</h2>
+                    <p class="skills__text">&nbsp</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-terminal skills__icon'></i>
+                            <span class="skills__name">Swift</span>
                         </div>
-                          <div class="flip-card-back">
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-terminal skills__icon'></i>
+                            <span class="skills__name">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-terminal skills__icon'></i>
+                            <span class="skills__name">C</span>
+                        </div>
+                    </div>
+
+                    <p class="skills__text">&nbsp</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-joystick skills__icon'></i>
+                            <span class="skills__name">Springboot</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-joystick skills__icon'></i>
+                            <span class="skills__name">Kafka</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-terminal skills__icon'></i>
+                            <span class="skills__name">Unix</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work__container bd-grid">
+                
+                <div class="work__img">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img style='height: 100%; width: 100%; object-fit: contain; background-color: white;'
+                                src="assets/img/google-logo-transparent.png" alt="">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Developer Relations Engineer</h1>
+                            <p style="margin-top: -1em;">Jun 2022 - Aug 2023</p>
                             <br>
-                            <h1>Developer Relations Engineer</h1>
-                            <br>
-                            <p>Architect & Engineer</p>
-                            <p>We love that guy</p>
-                          </div>
+                            Created and launched sample applications and tutorials for Bazel/Blaze, which served as an onboarding resource for devs
+                            
+                            <p class="hashtag">#Java, #Python, #Bazel, #TechWriting</p>
+                            
                         </div>
-                      </div>
-                      <div class="work__img">
-                        <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/goldman.png" alt="">
-                        </div>
-                          <div class="flip-card-back">
-                            <br>
-                            <h1>Developer Relations Engineer</h1>
-                            <br>
-                            <p>Architect & Engineer</p>
-                            <p>We love that guy</p>
-                          </div>
-                        </div>
-                      </div>
-                    <div class="work__img">
-                        <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/google-logo-transparent.png" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/technica.png" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/gwc.png" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/umd.png" alt="">
                     </div>
                 </div>
-            </section>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact Me</h2>
+                <div class="work__img">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/goldman.png"
+                                alt="">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Software Engineering Intern</h1>
+                            <p style="margin-top: -1em;">Jun 2021 - Aug 2021</p>
+                            <br>
+                            <p>Merged two programs into a single unified system by implementing a backwards compatibility microservice using Kafka, Spring Boot, and REST APIs</p>
+            
+                            <p class="hashtag">#Java, #Springboot, #Kafka, #Hibernate, #Fullstack</p>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="contact__container bd-grid">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScS6WQ9rVhD6KHy8pIs2eEj7fR6RJHp7j5_1W5ZaHw-25a0xw/viewform?embedded=true" width="640" height="673" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    <!-- <form action="mailto:lillian.nose@gmail.com?subject= Mail from Our Site &body=message" class="contact__form">
+                <div class="work__img">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/google-logo-transparent.png"
+                                alt="">
+                        </div>
+                        <div class="flip-card-back">
+
+                            <h3>Developer Relations Engineering Intern</h1>
+                            <p style="margin-top: -1em;">Jun 2020 - Aug 2020</p>
+                            <br>
+                            <p>Created a mock SDK for the Google Mobile Ads team to improve testing effiency by 99%</p>
+                           
+                            <p class="hashtag">#Unity, #C#</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__img">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/technica.png"
+                                alt="">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Hackathon Organizer</h1>
+                            <p style="margin-top: -1em;">Apr 2020 - Feb 2022</p>
+                            <br>
+                            <p>Created a beginner's track program for hackers with no experience with coding</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__img">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/gwc.png"
+                                alt="">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Teaching Assistant</h1>
+                            <p style="margin-top: -1em;">Feb 2020 - Apr 2020</p>
+                            <br>
+                            <p>Introduced computer science to local middle and high school girls by planning lessons and projects</p>
+                            <p class="hashtag">#Python, #Teaching</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__img">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/umd.png"
+                                alt="">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>CMNS Peer Mentor</h1>
+                            <p style="margin-top: -1em;">Jan 2021 - May 2022</p>
+                            <br>
+                            <p>Served as a guide to freshmen in the College of Mathematics and Natural Sciences</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <!-- <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="contact__container bd-grid">
+                <!-- <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScS6WQ9rVhD6KHy8pIs2eEj7fR6RJHp7j5_1W5ZaHw-25a0xw/viewform?embedded=true"
+                    width="640" height="673" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+                <!-- <form action="mailto:lillian.nose@gmail.com?subject=Hello &body=message" class="contact__form">
                         <input type="text" placeholder="Name" class="contact__input">
                         <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
                         <input type="submit" value="Send" class="contact__button button">
-                    </form>
-                -->
-                </div>
-            </section>
-        </main>
+                    </form> -->
+                
+                    <!-- <p>I'm currently looking for new opportunities!</p>
+                    <p>Reach out to me by email or by LinkedIn<p>
+                    <a href="mailto:lillian.nose@gmail.com"><i class='bx bxs-envelope' style="color: black;"></i></a>
+                 -->
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Lillian Nosé</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/lillian-nose/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="mailto:lillian.nose@gmail.com" class="footer__icon"><i class='bx bxs-envelope' ></i></a>
-                <a href="https://github.com/lsnose" class="footer__icon"><i class='bx bxl-github'></i></a>
-            </div>
-            <p>&#169; 2020 Copyright All rights reserved</p>
-        </footer>
+               
+            </div> -->
+        <!-- </section> -->
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Lillian Nosé</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/lillian-nose/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="mailto:lillian.nose@gmail.com" class="footer__icon"><i class='bx bxs-envelope'></i></a>
+            <a href="https://github.com/lsnose" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
+    </footer>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
